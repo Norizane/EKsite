@@ -1,0 +1,34 @@
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-color;
+  padding: 10px 10px;
+  margin-top: auto;
+
+  .footerFirstImg, .footerSecondImg {
+    height: 25px;
+    width: 50px;
+  }
+
+  .footerButton {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-family: $font-family-base;
+    font-style: $font-style-base;
+    color: $secondary-color;
+    font-size: x-large;
+    cursor: pointer;
+  }
+}
+
+@include mobile {
+  .footerFirstImg, .footerSecondImg {
+    display: none;
+  }
+
+  .footerButton {
+    padding-bottom: 20px;
+  }
+}

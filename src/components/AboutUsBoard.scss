@@ -1,0 +1,197 @@
+.aboutUsInformation {
+  display: flex;
+  flex-direction: column;
+  height: 300vh;
+  margin: 0;
+
+  .section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.firstSection {
+      padding: 0 100px 100px 100px;
+
+      .videoContainer {
+        text-align: center;
+
+        .video {
+          height: 70%;
+          width: auto;
+          border-radius: 4px;
+          box-shadow: 8px 14px 30px rgba(66, 68, 90, 0.17);
+        }
+
+        .mute-button {
+          margin-top: 20px;
+        }
+      }
+
+      .firstInformation {
+        margin-left: 40px;
+        text-align: center;
+        color: $secondary-color;
+        font-family: $font-family-base;
+        font-style: $font-style-base;
+
+        .startInformation {
+          background-color: white;
+          border-radius: 4px;
+          box-shadow: 8px 14px 30px rgba(66, 68, 90, 0.17);
+          padding: 20px;
+        }
+
+        h1 {
+          font-size: xxx-large;
+          font-weight: 400;
+          margin-bottom: 150px;
+        }
+        h2 {
+          font-size: x-large;
+          font-weight: 400;
+        }
+
+        p {
+          color: $secondary-colorOpacity;
+        }
+      }
+    }
+
+    &.secondSection {
+      .secondInformation {
+        display: flex;
+        flex-direction: column;
+        padding: 0 100px;
+        gap: 100px;
+
+        .information {
+          text-align: center;
+          color: $secondary-color;
+          font-family: $font-family-base;
+          font-style: $font-style-base;
+          display: flex;
+          background-color: white;
+          border-radius: 4px 0 0 4px;
+          box-shadow: 8px 14px 30px rgba(66, 68, 90, 0.17);
+          padding-left: 100px;
+
+          h1 {
+            font-size: x-large;
+            font-weight: 400;
+          }
+          img {
+            height: 200px;
+            width: 300px;
+            margin-left: 100px;
+            border-radius: 0 4px 4px 0;
+          }
+          .secondImg {
+            margin-right: 100px;
+            margin-left: 0;
+          }
+        }
+        .information.second {
+          border-radius: 0 4px 4px 0;
+          padding: 0 100px 0 0;
+          img {
+            border-radius: 4px 0 0 4px;
+          }
+        }
+      }
+    }
+
+    &.thirdSection {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .questionSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $secondary-color;
+        font-family: $font-family-base;
+        font-style: $font-style-base;
+
+        input::placeholder {
+          color: $secondary-color;
+          font-family: $font-family-base;
+          font-style: $font-style-base;
+        }
+
+        textarea::placeholder {
+          color: $secondary-color;
+          font-family: $font-family-base;
+          font-style: $font-style-base;
+        }
+
+        button {
+          margin-top: 40px;
+          cursor: pointer;
+          width: 40%;
+          padding: 10px 25px;
+          border-radius: 4px;
+          border: 0;
+          background-color: $secondary-color;
+          color: white;
+          font-family: $font-family-base;
+          font-weight: $font-weight-base;
+          font-style: $font-style-base;
+          box-shadow: 8px 14px 30px rgba(66, 68, 90, 0.17);
+        }
+
+        .emailInput {
+          margin-bottom: 20px;
+          padding: 10px;
+          font-size: 16px;
+          height: 40px;
+          border: none;
+          background-color: white;
+          box-shadow: 8px 14px 30px rgba(66, 68, 90, 0.17);
+          border-radius: 4px;
+          color: $secondary-color;
+          font-family: $font-family-base;
+          font-style: $font-style-base;
+          width: 600px;
+          border-radius: 4px;
+        }
+
+        .textareaInput {
+          padding: 10px;
+          font-size: 16px;
+          height: 120px;
+          border: none;
+          background-color: white;
+          box-shadow: 8px 14px 30px rgba(66, 68, 90, 0.17);
+          border-radius: 4px;
+          color: $secondary-color;
+          font-family: $font-family-base;
+          font-style: $font-style-base;
+          width: 600px;
+          border-radius: 4px;
+          resize: none;
+        }
+
+        h1 {
+          margin: 50 0 40;
+          font-size: x-large;
+          font-weight: 400;
+        }
+      }
+
+      img {
+        height: 200px;
+      }
+
+      .links {
+        color: $secondary-color;
+
+        a {
+          margin: 0 40;
+        }
+      }
+    }
+  }
+}
