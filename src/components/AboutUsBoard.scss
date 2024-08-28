@@ -20,11 +20,12 @@
           height: 70%;
           width: auto;
           border-radius: 4px;
-          box-shadow: 8px 14px 30px rgba(66, 68, 90, 0.17);
+          box-shadow: $shadow;
         }
 
         .mute-button {
           margin-top: 20px;
+          color: white;
         }
       }
 
@@ -38,7 +39,7 @@
         .startInformation {
           background-color: white;
           border-radius: 4px;
-          box-shadow: 8px 14px 30px rgba(66, 68, 90, 0.17);
+          box-shadow: $shadow;
           padding: 20px;
         }
 
@@ -46,6 +47,7 @@
           font-size: xxx-large;
           font-weight: 400;
           margin-bottom: 150px;
+          color: white;
         }
         h2 {
           font-size: x-large;
@@ -73,7 +75,7 @@
           display: flex;
           background-color: white;
           border-radius: 4px 0 0 4px;
-          box-shadow: 8px 14px 30px rgba(66, 68, 90, 0.17);
+          box-shadow: $shadow;
           padding-left: 100px;
 
           h1 {
@@ -111,7 +113,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: $secondary-color;
+        color: white;
         font-family: $font-family-base;
         font-style: $font-style-base;
 
@@ -139,7 +141,7 @@
           font-family: $font-family-base;
           font-weight: $font-weight-base;
           font-style: $font-style-base;
-          box-shadow: 8px 14px 30px rgba(66, 68, 90, 0.17);
+          box-shadow: $shadow;
         }
 
         .emailInput {
@@ -149,7 +151,7 @@
           height: 40px;
           border: none;
           background-color: white;
-          box-shadow: 8px 14px 30px rgba(66, 68, 90, 0.17);
+          box-shadow: $shadow;
           border-radius: 4px;
           color: $secondary-color;
           font-family: $font-family-base;
@@ -164,7 +166,7 @@
           height: 120px;
           border: none;
           background-color: white;
-          box-shadow: 8px 14px 30px rgba(66, 68, 90, 0.17);
+          box-shadow: $shadow;
           border-radius: 4px;
           color: $secondary-color;
           font-family: $font-family-base;

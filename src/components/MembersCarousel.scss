@@ -11,6 +11,11 @@
 
       h1{
         font-weight: 400;
+        color: white;
+      }
+
+      p{
+        color: white;
       }
 
       img {
@@ -18,7 +23,8 @@
         height: 300px;
         border-radius: 4px;
         margin-bottom: 20px;
-        box-shadow: 8px 14px 30px rgba(66, 68, 90, 0.17);
+        box-shadow: $shadow;
+
       }
       button {
         cursor: pointer;

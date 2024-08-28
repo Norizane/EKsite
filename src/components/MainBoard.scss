@@ -9,7 +9,7 @@
     padding-bottom: 20px;
     font-family: $font-family-base;
     font-style: $font-style-base;
-    color: $secondary-color;
+    color: white;
 
     h1 {
       margin-right: 20px;
@@ -29,7 +29,7 @@
       display: flex;
       background-color: white;
       border-radius: 4px;
-      box-shadow: 8px 14px 30px rgba(66, 68, 90, 0.17);
+      box-shadow: $shadow;
 
       .mainInformation {
         display: flex;
@@ -108,7 +108,7 @@
       width: 700px;
       background-color: white;
       border-radius: 4px;
-      box-shadow: 8px 14px 30px rgba(66, 68, 90, 0.17);
+      box-shadow: $shadow;
 
       .textContainer {
         color: $secondary-colorOpacity;

@@ -66,7 +66,7 @@ const MembersCarousel = () => {
               <p>{member.description}</p>
               <img src={member.photo} alt={`Photo of ${member.name}`} />
               <button>Read more</button>
-              <hr />
+             
             </div>
           ))}
       

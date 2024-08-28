@@ -14,7 +14,7 @@
   h1 {
     cursor: pointer;
     margin-left: 50px;
-    color: $secondary-color;
+    color: white;
     font-family: $font-family-base;
     font-weight: 300;
     font-style: $font-style-base;
@@ -37,7 +37,7 @@
     a {
       margin: 5px 5px;
       text-decoration: none;
-      color: $secondary-color;
+      color: white;
       font-family: $font-family-base;
       font-weight: $font-weight-base;
       font-style: $font-style-base;
@@ -71,7 +71,7 @@
       display: flex;
       background: transparent;
       border: 0;
-      color: $secondary-color;
+      color: white;
     }
 
     h1 {
