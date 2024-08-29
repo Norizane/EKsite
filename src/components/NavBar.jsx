@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import flaga from "../img/flaga.jpg";
+import logo from "../img/EKWADORlogo.png"
 const NavBar = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -13,7 +14,7 @@ const NavBar = () => {
   return (
     <div className="navBarContainer">
       <div>
-        <h1 onClick={() => navigate("/")}>Ekwador</h1>
+        <img className='logo' onClick={() => navigate("/")} src={logo} alt="logo" />
       </div>
       <div
         className={`navBarNavigation ${

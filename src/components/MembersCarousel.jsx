@@ -1,8 +1,11 @@
 import { membersData } from "../Data/MembersData";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
+import { useNavigate } from "react-router-dom";
 const MembersCarousel = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className="carouselContainer">
       <div className="carousel">
@@ -65,7 +68,7 @@ const MembersCarousel = () => {
               <h1>{member.name}</h1>
               <p>{member.description}</p>
               <img src={member.photo} alt={`Photo of ${member.name}`} />
-              <button>Read more</button>
+              <button onClick={() => navigate("/AboutMembers")}>Read more</button>
              
             </div>
           ))}

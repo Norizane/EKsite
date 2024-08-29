@@ -4,6 +4,7 @@
   height: 300vh;
   margin: 0;
 
+
   .section {
     flex: 1;
     display: flex;
@@ -47,7 +48,7 @@
           font-size: xxx-large;
           font-weight: 400;
           margin-bottom: 150px;
-          color: white;
+          color: #fdf0d5;
         }
         h2 {
           font-size: x-large;
@@ -55,7 +56,7 @@
         }
 
         p {
-          color: $secondary-colorOpacity;
+          color: $primary-color;
         }
       }
     }
@@ -69,7 +70,7 @@
 
         .information {
           text-align: center;
-          color: $secondary-color;
+          color: $primary-color;
           font-family: $font-family-base;
           font-style: $font-style-base;
           display: flex;
@@ -81,6 +82,7 @@
           h1 {
             font-size: x-large;
             font-weight: 400;
+            color: $secondary-color;
           }
           img {
             height: 200px;
@@ -188,7 +190,7 @@
       }
 
       .links {
-        color: $secondary-color;
+        color: $thirdly-color;
 
         a {
           margin: 0 40;

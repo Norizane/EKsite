@@ -1,0 +1,37 @@
+.MembersInformationContainer {
+  height: 300vh;
+
+
+  .firstInformationSection, 
+  .secondInformationSection, 
+  .thirdInformationSection {
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    padding: 50px 0 0 50px;
+
+  }
+
+  .firstInformationSection {
+    background-color: red;
+  }
+
+  .secondInformationSection {
+    background-color: green;
+  }
+
+  .thirdInformationSection {
+    background-color: white;
+  }
+
+  .fixedPhoto{
+    width: 400;
+    height: 600;
+    position: fixed;
+    right: 50px;
+    top: 130px;
+    box-shadow: $shadow;
+    border-radius: 4px;
+    border: none;
+  }
+}
