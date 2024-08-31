@@ -1,4 +1,4 @@
-import flaga from '../img/flaga.jpg'
+import flaga from '../../public/img/flaga.jpg'
 
 const Footer = () => {
   return (

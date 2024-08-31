@@ -1,37 +1,42 @@
 .MembersInformationContainer {
-  height: 300vh;
+  height: 255vh;
 
-
-  .firstInformationSection, 
-  .secondInformationSection, 
+  .firstInformationSection,
+  .secondInformationSection,
   .thirdInformationSection {
-    height: 100vh;
+    height: 85vh;
     display: flex;
     justify-content: start;
     padding: 50px 0 0 50px;
-
+    background-color: $primary-color;
+    font-family: $font-family-base;
+    font-style: $font-style-base;
+  }
+  h1{
+    color: $thirdly-color;
+  }
+  p{
+    color: $secondary-color;
   }
 
-  .firstInformationSection {
-    background-color: red;
-  }
-
-  .secondInformationSection {
-    background-color: green;
-  }
-
-  .thirdInformationSection {
-    background-color: white;
-  }
-
-  .fixedPhoto{
-    width: 400;
-    height: 600;
+  #image {
+    width: 400px;  
+    height: 600px;  
     position: fixed;
     right: 50px;
     top: 130px;
     box-shadow: $shadow;
     border-radius: 4px;
     border: none;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .fade-out {
+    opacity: 0;
+  }
+
+  .fade-in {
+    opacity: 1;
   }
 }

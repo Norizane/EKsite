@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import flaga from "../img/flaga.jpg";
-import logo from "../img/EKWADORlogo.png"
+import flaga from "../../public/img//flaga.jpg";
+import logo from "../../public/img//EKWADORlogo.png"
 const NavBar = () => {
   const [isVisible, setIsVisible] = useState(false);
 
