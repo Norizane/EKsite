@@ -1,14 +1,14 @@
+import EKlogo from "../../public/img/EKlogo2.png";
+import LogInForm from "../components/LogInForm";
 const LogIn = () => {
   return (
-    <div>
-      <h1>
-        Ekwador
-      </h1>
-      <div>
-        <form action=""></form>
+    <>
+      <div className="mainLogInContainer">
+        <img className="Logo" src={EKlogo} alt="Logo" />
+        <LogInForm/>
       </div>
-    </div>
-  )
-}
+    </>
+  );
+};
 
-export default LogIn
+export default LogIn;

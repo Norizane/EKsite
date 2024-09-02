@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import flaga from "../../public/img//flaga.jpg";
-import logo from "../../public/img//EKWADORlogo.png"
+import logo from "../../public/img//EKlogo3.png"
 const NavBar = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -23,13 +23,13 @@ const NavBar = () => {
       >
         <ul className="navBarLinks">
           <li>
-            <a onClick={() => navigate("/Events")}>Events</a>
+            <a className="navBarLink" onClick={() => navigate("/Events")}>Events</a>
           </li>
           <li>
-            <a onClick={() => navigate("/Members")}>Members</a>
+            <a className="navBarLink" onClick={() => navigate("/Members")}>Members</a>
           </li>
           <li>
-            <a onClick={() => navigate("/AboutUs")}>About us</a>
+            <a className="navBarLink" onClick={() => navigate("/AboutUs")}>About us</a>
           </li>
         </ul>
         <button onClick={() => navigate("/LogIn")} className="navBarButton">

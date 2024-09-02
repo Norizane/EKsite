@@ -14,7 +14,8 @@
   .logo {
     cursor: pointer;
     margin-left: 50px;
-    width: 200px;
+    width: 100px;
+    height: 100px;
   }
 
   .navBarNavigation {
@@ -39,6 +40,18 @@
       font-weight: $font-weight-base;
       font-style: $font-style-base;
     }
+
+    .navBarLink {
+      border-bottom: 2px solid transparent; /* Domyślna przezroczysta granica */
+      transition: border-bottom-color 0.2s;
+    }
+    
+    .navBarLink:hover {
+      outline: none;
+      border-bottom-color: $secondary-color; /* Zmiana koloru dolnej granicy */
+    }
+    
+    
   }
 
   .navBarButton {

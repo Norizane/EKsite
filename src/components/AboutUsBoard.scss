@@ -38,7 +38,7 @@
         font-style: $font-style-base;
 
         .startInformation {
-          background-color: white;
+          background-color: $thirdly-color;
           border-radius: 4px;
           box-shadow: $shadow;
           padding: 20px;
@@ -66,7 +66,7 @@
         display: flex;
         flex-direction: column;
         padding: 0 100px;
-        gap: 100px;
+        gap: 85px;
 
         .information {
           text-align: center;
@@ -74,7 +74,7 @@
           font-family: $font-family-base;
           font-style: $font-style-base;
           display: flex;
-          background-color: white;
+          background-color: $thirdly-color;
           border-radius: 4px 0 0 4px;
           box-shadow: $shadow;
           padding-left: 100px;
@@ -191,10 +191,14 @@
 
       .links {
         color: $thirdly-color;
-
+        
         a {
           margin: 0 40;
+          transition: transform 0.3s ease-in-out;
         }
+      }
+      a:hover {
+        transform: scale(1.1);
       }
     }
   }

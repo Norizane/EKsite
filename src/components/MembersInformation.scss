@@ -7,24 +7,30 @@
     height: 85vh;
     display: flex;
     justify-content: start;
-    padding: 50px 0 0 50px;
+    padding: 50px 0 0 100px;
     background-color: $primary-color;
     font-family: $font-family-base;
     font-style: $font-style-base;
   }
   h1{
     color: $thirdly-color;
+    padding-right: 600px;
   }
   p{
     color: $secondary-color;
+    padding-right: 600px;
+  }
+
+  .lastHeader {
+    padding-top: 40px;
   }
 
   #image {
-    width: 400px;  
-    height: 600px;  
+    width: 300px;
+    height: 500px;
     position: fixed;
-    right: 50px;
-    top: 130px;
+    right: 200px;
+    top: 160px;
     box-shadow: $shadow;
     border-radius: 4px;
     border: none;
