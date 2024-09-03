@@ -11,13 +11,11 @@
     display: none;
   }
 
-  h1 {
+  .logo {
     cursor: pointer;
     margin-left: 50px;
-    color: $secondary-color;
-    font-family: $font-family-base;
-    font-weight: 300;
-    font-style: $font-style-base;
+    width: 100px;
+    height: 100px;
   }
 
   .navBarNavigation {
@@ -37,11 +35,23 @@
     a {
       margin: 5px 5px;
       text-decoration: none;
-      color: $secondary-color;
+      color: white;
       font-family: $font-family-base;
       font-weight: $font-weight-base;
       font-style: $font-style-base;
     }
+
+    .navBarLink {
+      border-bottom: 2px solid transparent; /* Domyślna przezroczysta granica */
+      transition: border-bottom-color 0.2s;
+    }
+    
+    .navBarLink:hover {
+      outline: none;
+      border-bottom-color: $secondary-color; /* Zmiana koloru dolnej granicy */
+    }
+    
+    
   }
 
   .navBarButton {
@@ -71,7 +81,7 @@
       display: flex;
       background: transparent;
       border: 0;
-      color: $secondary-color;
+      color: white;
     }
 
     h1 {

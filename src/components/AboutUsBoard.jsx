@@ -1,8 +1,8 @@
 import video1 from "../video/video.mp4";
 import { useState, useRef } from "react";
-import image1 from "../img/ekwador1.jpg";
-import image2 from "../img/ekwador2.jpeg";
-import image3 from "../img/ekwador3.png";
+import image1 from "../../public/img//ekwador1.jpg";
+import image2 from "../../public/img//ekwador2.jpeg";
+import image3 from "../../public/img//ekwador3.png";
 const AboutUsBoard = () => {
   const [isMuted, setIsMuted] = useState(true); 
   const videoRef = useRef(null);
