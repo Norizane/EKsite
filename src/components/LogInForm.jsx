@@ -23,9 +23,9 @@ const LogInForm = () => {
               required
             />
 
-            <button type="submit">Zaloguj się</button>
+            <button type="submit">log In</button>
 
-            <a href="#" className="register-link">Nie masz konta? Zarejestruj się</a>
+            <a href="#" className="register-link">Don't have an account? Register now</a>
           </form>
         </div>
   )
