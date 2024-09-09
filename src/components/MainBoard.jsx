@@ -13,7 +13,10 @@ const MainBoard = () => {
             <div className="informationContainer">
               <div>
                 <h1>Event Name</h1>
+                <div className="detailedInformation">
+                <p className="eventCreator">Event Type</p>
                 <p>Event Creator</p>
+                </div>
               </div>
             </div>
             <div className="description">

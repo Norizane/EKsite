@@ -51,10 +51,16 @@
             color: $primary-color;
           }
 
-          p {
+          .detailedInformation {
             color: $primary-color;
-            margin: 10px 0;
             font-size: small;
+            display: flex;
+            .eventCreator{
+              margin-right: 15px;
+            }
+            p{
+              margin: 0;
+            }
           }
 
         }
