@@ -1,5 +1,6 @@
 .eventsCreatorContainer {
   font-family: $font-family-base;
+  margin: 40px 0;
   .createEvent {
     display: flex;
     justify-content: space-between;
@@ -11,31 +12,30 @@
       font-weight: 400;
       color: $secondary-color;
     }
-    button {
+    .addButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       cursor: pointer;
       margin: 0 50px;
-      height: 50px;
-      width: 100px;
+      height: 35px;
+      width: 50px;
       border-radius: 4px;
-      border: 0;
       background-color: $secondary-color;
       color: white;
-      font-family: $font-family-base;
-      font-weight: $font-weight-base;
-      font-style: $font-style-base;
     }
   }
   .yourEventAndCreateContainer {
     height: 22vh;
     border-bottom: 1px solid $secondary-color;
     overflow: auto;
-    scrollbar-width: none; 
-   
+    scrollbar-width: none;
+
     .yourEventsContainer {
       display: flex;
       justify-content: space-evenly;
       border: 0;
-      flex-wrap: wrap;  
+      flex-wrap: wrap;
       overflow-y: scroll;
       scrollbar-width: none;
 
@@ -50,21 +50,66 @@
         border-radius: 4px;
         margin: 20px 0;
         color: $primary-color;
-        .eventDescription{
+        .eventDescription {
           padding: 10px;
-          h1{
+          h1 {
             margin: 0;
             font-size: x-large;
             font-weight: 400;
           }
-          p{
+          p {
             margin: 0;
+            padding-top: 10px;
           }
         }
-      span{
-        padding: 10px;
-        color: #ffc107;
-      }  
+        span {
+          padding: 10px;
+          color: #ffc107;
+        }
+      }
+    }
+  }
+  .othersEvents {
+    .othersEventsNavBar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        font-size: x-large;
+        font-weight: 400;
+        color: #669bbc;
+      }
+    }
+    .othersEventsContainer {
+      display: flex;
+      justify-content: space-evenly;
+      border: 0;
+      flex-wrap: wrap;
+      overflow-y: scroll;
+      scrollbar-width: none;
+      height: 45vh;
+      .yourEvent {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40vh;
+        background-color: $thirdly-color;
+        height: 150px;
+        border-radius: 4px;
+        margin: 20px 0;
+        .eventDescription {
+          padding: 10px;
+          h1 {
+            margin: 0;
+            font-size: x-large;
+            font-weight: 400;
+          }
+          p {
+            margin: 0;
+            padding-top: 10px;
+          }
+        }
       }
     }
   }

@@ -4,7 +4,7 @@ import image1 from "../../public/img//ekwador1.jpg";
 import image2 from "../../public/img//ekwador2.jpeg";
 import image3 from "../../public/img//ekwador3.png";
 const AboutUsBoard = () => {
-  const [isMuted, setIsMuted] = useState(true); 
+  const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef(null);
 
   const toggleMute = () => {
@@ -13,8 +13,6 @@ const AboutUsBoard = () => {
       videoRef.current.muted = !isMuted;
     }
   };
-
-
 
   return (
     <div>
@@ -41,19 +39,18 @@ const AboutUsBoard = () => {
           <div className="firstInformation">
             <h1>This is how it all started</h1>
             <div className="startInformation">
-            <h2>04.11.2018</h2>
-            <p>
-              {" "}
-              Our story begins during a joyful return from the birthday party of
-              one of our Ecuadorian ladies. During this fascinating party and
-              the journey back, an idea was born, which then turned into a
-              beautiful adventure that continues to this day. On that day, the
-              founding fathers, led by Admin, not only created our group but
-              also made a kind of vow. To this day, we all live in Ecuador
-              according to these words: "Bo rodzina jest zawsze razem !!"
-            </p>
+              <h2>04.11.2018</h2>
+              <p>
+                {" "}
+                Our story begins during a joyful return from the birthday party
+                of one of our Ecuadorian ladies. During this fascinating party
+                and the journey back, an idea was born, which then turned into a
+                beautiful adventure that continues to this day. On that day, the
+                founding fathers, led by Admin, not only created our group but
+                also made a kind of vow. To this day, we all live in Ecuador
+                according to these words: "Bo rodzina jest zawsze razem !!"
+              </p>
             </div>
-            
           </div>
         </div>
         <div className="section secondSection">
@@ -82,7 +79,16 @@ const AboutUsBoard = () => {
                 <h1>3.10.2020</h1>
                 <p>
                   {" "}
-                  After two years, our shared good times resulted in another exciting chapter in the history of our group: the creation of our Discord server. This gave us new opportunities not only in terms of entertainment but also for meeting and integrating new members into our community. I would describe this period as "New Friends and Companions." However, it would not be realistic if our beautiful history did not also include challenges. This period could also be referred to as the <a href="about.html">"Great Paraguayan Rebellion,"</a> from which we emerged victorious and stronger than before.
+                  After two years, our shared good times resulted in another
+                  exciting chapter in the history of our group: the creation of
+                  our Discord server. This gave us new opportunities not only in
+                  terms of entertainment but also for meeting and integrating
+                  new members into our community. I would describe this period
+                  as "New Friends and Companions." However, it would not be
+                  realistic if our beautiful history did not also include
+                  challenges. This period could also be referred to as the{" "}
+                  <a href="about.html">"Great Paraguayan Rebellion,"</a> from
+                  which we emerged victorious and stronger than before.
                 </p>
               </div>
             </div>
@@ -92,7 +98,13 @@ const AboutUsBoard = () => {
                 <h1>2024 to infinity</h1>
                 <p>
                   {" "}
-                  We move to the present day, during which, among other things, this website is being created. With many interesting projects and experiences behind us, I can confidently say that the people who contribute to this group are truly amazing. I am sure that this project is not the last, and the website will require updates in the future. Therefore, this period is best described by the words: "Ciąg dalszy nastąpi"
+                  We move to the present day, during which, among other things,
+                  this website is being created. With many interesting projects
+                  and experiences behind us, I can confidently say that the
+                  people who contribute to this group are truly amazing. I am
+                  sure that this project is not the last, and the website will
+                  require updates in the future. Therefore, this period is best
+                  described by the words: "Ciąg dalszy nastąpi"
                 </p>
               </div>
               <img src={image1} alt="image1" />
@@ -117,10 +129,34 @@ const AboutUsBoard = () => {
             <button>Send Question</button>
           </div>
           <div className="links">
-            <a className=" fa-brands fa-discord fa-4x"></a>
-            <a className=" fa-brands fa-facebook fa-4x"></a>
-            <a className=" fa-brands fa-instagram fa-4x"></a>
-            <a className=" fa-brands fa-youtube fa-4x"></a>
+            <button
+              className="fa-brands fa-discord fa-4x"
+              onClick={() =>
+                (window.location.href =
+                  "https://discord.com/channels/762044835661742150/762045414680559646")
+              }
+            ></button>
+            <button
+              className="fa-brands fa-facebook fa-4x"
+              onClick={() =>
+                (window.location.href =
+                  "https://www.instagram.com/ekwador_2000/")
+              }
+            ></button>
+            <button
+              className="fa-brands fa-instagram fa-4x"
+              onClick={() =>
+                (window.location.href =
+                  "https://www.instagram.com/ekwador_2000/")
+              }
+            ></button>
+            <button
+              className="fa-brands fa-youtube fa-4x"
+              onClick={() =>
+                (window.location.href =
+                  "https://www.instagram.com/ekwador_2000/")
+              }
+            ></button>
           </div>
         </div>
       </div>

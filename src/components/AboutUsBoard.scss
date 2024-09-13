@@ -189,15 +189,17 @@
         height: 200px;
       }
 
-      .links {
-        color: $thirdly-color;
-        
-        a {
+      .links { 
+        button{
           margin: 0 40;
           transition: transform 0.3s ease-in-out;
+          background: none;
+          border: none;
+          cursor: pointer;
+          color: $thirdly-color;
         }
       }
-      a:hover {
+      button:hover {
         transform: scale(1.1);
       }
     }
