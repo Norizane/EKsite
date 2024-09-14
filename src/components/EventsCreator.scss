@@ -2,9 +2,38 @@
   height: 100vh;
   font-family: $font-family-base;
   .yourEventsContainer {
-    background-color: #003958;
+    background-color: $light-primary-color;
     height: 35vh;
     margin: 20px 100px;
+    border-radius: 4px;
+    box-shadow: $shadow;
+    padding-bottom: 20;
+    .navBar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      h1 {
+        font-size: x-large;
+        font-weight: 200;
+        color: $thirdly-color;
+      }
+      a {
+        color: $secondary-color;
+      }
+    }
+    .eventContainer {
+      display: flex;
+      justify-content: center;
+      height: 25vh;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+  .othersEventContainer{
+    height: 40vh;
+    margin: 20px 100px;
+    background-color: $light-primary-color ;
     border-radius: 4px;
     box-shadow: $shadow;
     .navBar {
@@ -18,15 +47,12 @@
         color: $thirdly-color;
       }
       a {
-        color: $thirdly-color;
+        color: $secondary-color;
       }
     }
     .eventContainer {
       display: flex;
-      justify-content: center;
-      height: 25vh;
-      flex-wrap: wrap;
-      gap: 10px;
+      justify-content: space-around;
     }
   }
 }

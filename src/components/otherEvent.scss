@@ -1,0 +1,31 @@
+.otherEventsContainer{
+  background-color: $thirdly-color;
+  height: 200px;
+  width: 450px;
+  border-radius: 4px;
+  .mainInformation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .imgContainer {
+      img {
+        height: 200px;
+        border-radius: 4px 0 0 4px;
+      }
+    }
+    .descriptionContainer {
+      height: 200px;
+      margin-left: 20px;
+      color: $primary-color;
+      h1 {
+        margin: 10px 0 0 0;
+        font-size: x-large;
+        font-weight: 400;
+      }
+      p {
+        margin: 0;
+        font-weight: 200;
+      }
+    }
+  }
+}

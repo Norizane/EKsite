@@ -1,4 +1,5 @@
 import Request from "../components/Request";
+import eventPhoto from "../../public/img/Ekwador2000.png";
 
 const MainBoard = () => {
   return (
@@ -35,7 +36,7 @@ const MainBoard = () => {
           <div>
             <img
               className="mainBoardImg"
-              src="https://i1.fdbimg.pl/x1/7fay2m/1014x1500_m3ae4o.jpg"
+              src={eventPhoto}
               alt="Opis zdjęcia"
             ></img>
           </div>

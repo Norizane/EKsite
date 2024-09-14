@@ -2,42 +2,48 @@
   font-family: $font-family-base;
   width: 90%;
   border-radius: 4px;
- height: 80px;
- background-color: $thirdly-color;
- display: flex;
- justify-content: space-between;
- align-items: center;
-.mainInformation{
+  height: 80px;
+  background-color: $thirdly-color;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
- .imgContainer{
-  img{
-    height: 80px;
+  .mainInformation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .imgContainer {
+      img {
+        height: 80px;
+        border-radius: 4px 0 0 4px;
+      }
+    }
+    .descriptionContainer {
+      margin-left: 20px;
+      color: $primary-color;
+      h1 {
+        margin: 0;
+        font-size: x-large;
+        font-weight: 400;
+      }
+      p {
+        margin: 0;
+        font-weight: 200;
+      }
+    }
   }
- }
- .descriptionContainer{
-  margin-left: 20px;
-  color: $primary-color;
-  h1{
-    margin: 0;
-    font-size: x-large;
-    font-weight: 400;
+  .buttonsContainer {
+    margin-right: 20px;
+    .edit {
+      margin-left: 10px;
+      border: none;
+      background-color: transparent;
+      color: $standard-yellow;
+    }
+    .delete {
+      margin-left: 10px;
+      border: none;
+      background-color: transparent;
+      color: $standard-red;
+    }
   }
-  p{
-    margin: 0;
-    font-weight: 200;
-  }
- }
-}
- .buttonsContainer{
-  margin-right: 20px;
-  .edit{
-   color: $standard-yellow;
-  }
-  .delete{
-    color: $standard-red;
-  }
- }
- 
 }

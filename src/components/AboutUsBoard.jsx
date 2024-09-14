@@ -87,7 +87,7 @@ const AboutUsBoard = () => {
                   as "New Friends and Companions." However, it would not be
                   realistic if our beautiful history did not also include
                   challenges. This period could also be referred to as the{" "}
-                  <a href="about.html">"Great Paraguayan Rebellion,"</a> from
+                  <a className="paraguayanRebellionLink" href="about.html">"Great Paraguayan Rebellion,"</a> from
                   which we emerged victorious and stronger than before.
                 </p>
               </div>
