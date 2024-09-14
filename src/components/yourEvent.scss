@@ -1,0 +1,43 @@
+.yourEventContainer {
+  font-family: $font-family-base;
+  width: 90%;
+  border-radius: 4px;
+ height: 80px;
+ background-color: $thirdly-color;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+.mainInformation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ .imgContainer{
+  img{
+    height: 80px;
+  }
+ }
+ .descriptionContainer{
+  margin-left: 20px;
+  color: $primary-color;
+  h1{
+    margin: 0;
+    font-size: x-large;
+    font-weight: 400;
+  }
+  p{
+    margin: 0;
+    font-weight: 200;
+  }
+ }
+}
+ .buttonsContainer{
+  margin-right: 20px;
+  .edit{
+   color: $standard-yellow;
+  }
+  .delete{
+    color: $standard-red;
+  }
+ }
+ 
+}

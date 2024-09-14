@@ -1,116 +1,32 @@
-.eventsCreatorContainer {
+.eventCreationContainer {
+  height: 100vh;
   font-family: $font-family-base;
-  margin: 40px 0;
-  .createEvent {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 50px;
-    h1 {
-      margin: 0;
-      font-size: x-large;
-      font-weight: 400;
-      color: $secondary-color;
-    }
-    .addButton {
+  .yourEventsContainer {
+    background-color: #003958;
+    height: 35vh;
+    margin: 20px 100px;
+    border-radius: 4px;
+    box-shadow: $shadow;
+    .navBar {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      cursor: pointer;
-      margin: 0 50px;
-      height: 35px;
-      width: 50px;
-      border-radius: 4px;
-      background-color: $secondary-color;
-      color: white;
-    }
-  }
-  .yourEventAndCreateContainer {
-    height: 22vh;
-    border-bottom: 1px solid $secondary-color;
-    overflow: auto;
-    scrollbar-width: none;
-
-    .yourEventsContainer {
-      display: flex;
-      justify-content: space-evenly;
-      border: 0;
-      flex-wrap: wrap;
-      overflow-y: scroll;
-      scrollbar-width: none;
-
-      .yourEvent {
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        justify-content: space-between;
-        width: 40vh;
-        background-color: $thirdly-color;
-        height: 150px;
-        border-radius: 4px;
-        margin: 20px 0;
-        color: $primary-color;
-        .eventDescription {
-          padding: 10px;
-          h1 {
-            margin: 0;
-            font-size: x-large;
-            font-weight: 400;
-          }
-          p {
-            margin: 0;
-            padding-top: 10px;
-          }
-        }
-        span {
-          padding: 10px;
-          color: #ffc107;
-        }
-      }
-    }
-  }
-  .othersEvents {
-    .othersEventsNavBar {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
+      padding: 0 20px;
       h1 {
         font-size: x-large;
-        font-weight: 400;
-        color: #669bbc;
+        font-weight: 200;
+        color: $thirdly-color;
+      }
+      a {
+        color: $thirdly-color;
       }
     }
-    .othersEventsContainer {
+    .eventContainer {
       display: flex;
-      justify-content: space-evenly;
-      border: 0;
+      justify-content: center;
+      height: 25vh;
       flex-wrap: wrap;
-      overflow-y: scroll;
-      scrollbar-width: none;
-      height: 45vh;
-      .yourEvent {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 40vh;
-        background-color: $thirdly-color;
-        height: 150px;
-        border-radius: 4px;
-        margin: 20px 0;
-        .eventDescription {
-          padding: 10px;
-          h1 {
-            margin: 0;
-            font-size: x-large;
-            font-weight: 400;
-          }
-          p {
-            margin: 0;
-            padding-top: 10px;
-          }
-        }
-      }
+      gap: 10px;
     }
   }
 }
