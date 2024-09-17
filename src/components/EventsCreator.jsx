@@ -1,26 +1,48 @@
 import YourEvent from "./yourEvent";
 import OtherEvent from "./otherEvent";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 const EventsCreator = () => {
+  const navigate = useNavigate();
+  const [isExpanded, setIsExpanded] = useState(false);
+  const othersEventContainer = document.querySelector(".othersEventContainer");
+  const toggleModals = () => {
+    setIsExpanded(prevIsExpanded => {
+      if (!prevIsExpanded) {
+   
+        setTimeout(() => {
+          if (othersEventContainer) othersEventContainer.style.display = 'none';
+        }, 1000); 
+      } else {
+
+        setTimeout(() => {
+          if (othersEventContainer) othersEventContainer.style.display = 'block';
+        }, 10); 
+      }
+      return !prevIsExpanded;
+    });
+  };
+  
   return (
     <div className="eventCreationContainer">
-      <div className="yourEventsContainer">
+      <div className={`yourEventsContainer ${isExpanded ? "expand" : ""}`}>
         <div className="navBar">
           <h1>Your Events</h1>
-          <a href="">See more</a>
+          <a onClick={toggleModals}>See more</a>
         </div>
         <div className="eventContainer">
-          <YourEvent/>
-          <YourEvent/>
+          <YourEvent />
+          <YourEvent />
         </div>
       </div>
-      <div className="othersEventContainer">
-      <div className="navBar">
+      <div className={`othersEventContainer ${isExpanded ? "hiddenContainer" : ""}`}>
+        <div className="navBar">
           <h1>Others Events</h1>
-          <a href="">See more</a>
+          <a onClick={() => navigate("/OtherEventsPage")}>See more</a>
         </div>
         <div className="eventContainer">
-          <OtherEvent/>
-          <OtherEvent/>
+          <OtherEvent />
+          <OtherEvent />
         </div>
       </div>
     </div>

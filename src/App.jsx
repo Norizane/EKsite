@@ -4,22 +4,22 @@ import Events from './pages/Events';
 import AboutUs from './pages/AboutUs';
 import Members from './pages/Members';
 import AboutMembers from './pages/AboutMembers';
-import LogIn from './pages/LogIn'
+import LogIn from './pages/LogIn';
+import OtherEventsPage from './pages/OtherEventsPage';
+import YourEventsPage from './pages/YourEventsPage';
 
-
-
-// import ErrorPage from './pages/ErrorPage';
-// import LogIn from './pages/LogIn';
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path='/Events' element={<Events/>} />
-      <Route path='/Members' element={<Members/>} />
-      <Route path='/AboutUs' element={<AboutUs/>} />
-      <Route path='/AboutMembers' element={<AboutMembers/>}/>
-      <Route path='/LogIn' element={<LogIn/>} />
+      <Route path="/Events" element={<Events />}/>
+      <Route path="/OtherEventsPage" element={<OtherEventsPage />} />
+      <Route path="/YourEventsPage" element={<YourEventsPage />} />
+      <Route path="/Members" element={<Members />} />
+      <Route path="/AboutUs" element={<AboutUs />} />
+      <Route path="/AboutMembers" element={<AboutMembers />} />
+      <Route path="/LogIn" element={<LogIn />} />
     </Routes>
   );
 }

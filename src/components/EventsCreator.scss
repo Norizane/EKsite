@@ -1,13 +1,15 @@
 .eventCreationContainer {
   height: 100vh;
   font-family: $font-family-base;
+  overflow: hidden;
   .yourEventsContainer {
-    background-color: $light-primary-color;
     height: 35vh;
     margin: 20px 100px;
     border-radius: 4px;
     box-shadow: $shadow;
     padding-bottom: 20;
+    transition: height 1.5s ease-out;
+
     .navBar {
       display: flex;
       justify-content: space-between;
@@ -30,12 +32,17 @@
       gap: 10px;
     }
   }
-  .othersEventContainer{
+  .yourEventsContainer.expand {
+    height: 75vh;
+  }
+  .othersEventContainer {
     height: 40vh;
     margin: 20px 100px;
-    background-color: $light-primary-color ;
     border-radius: 4px;
     box-shadow: $shadow;
+    opacity: 1;
+    transition: opacity 2s ease-out;
+
     .navBar {
       display: flex;
       justify-content: space-between;
@@ -54,5 +61,10 @@
       display: flex;
       justify-content: space-around;
     }
+  }
+
+  .hiddenContainer {
+    opacity: 0;
+    transition: opacity 1s ease-in;
   }
 }
