@@ -6,7 +6,7 @@ import Members from './pages/Members';
 import AboutMembers from './pages/AboutMembers';
 import LogIn from './pages/LogIn';
 import OtherEventsPage from './pages/OtherEventsPage';
-import YourEventsPage from './pages/YourEventsPage';
+
 
 
 function App() {
@@ -15,7 +15,6 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/Events" element={<Events />}/>
       <Route path="/OtherEventsPage" element={<OtherEventsPage />} />
-      <Route path="/YourEventsPage" element={<YourEventsPage />} />
       <Route path="/Members" element={<Members />} />
       <Route path="/AboutUs" element={<AboutUs />} />
       <Route path="/AboutMembers" element={<AboutMembers />} />

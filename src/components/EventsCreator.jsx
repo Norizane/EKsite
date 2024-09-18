@@ -1,5 +1,6 @@
 import YourEvent from "./yourEvent";
 import OtherEvent from "./otherEvent";
+import Modal from "../components/YourEventsModal"
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 const EventsCreator = () => {
@@ -24,11 +25,16 @@ const EventsCreator = () => {
   };
   
   return (
+    <>
+    <Modal/>
     <div className="eventCreationContainer">
       <div className={`yourEventsContainer ${isExpanded ? "expand" : ""}`}>
         <div className="navBar">
           <h1>Your Events</h1>
-          <a onClick={toggleModals}>See more</a>
+          <div className="addEventContainer">
+            <button className="addButton">Add Event</button>
+            <a onClick={toggleModals}>See more</a>
+          </div>
         </div>
         <div className="eventContainer">
           <YourEvent />
@@ -46,6 +52,7 @@ const EventsCreator = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
