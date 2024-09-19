@@ -195,3 +195,9 @@
     }
   }
 }
+
+@include bigdesktop {
+  .eventHeader{
+    margin-top: 80px;
+  }
+}

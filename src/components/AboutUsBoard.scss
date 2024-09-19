@@ -4,7 +4,6 @@
   height: 300vh;
   margin: 0;
 
-
   .section {
     flex: 1;
     display: flex;
@@ -101,7 +100,7 @@
           img {
             border-radius: 4px 0 0 4px;
           }
-          .paraguayanRebellionLink{
+          .paraguayanRebellionLink {
             color: $secondary-color;
           }
         }
@@ -192,8 +191,8 @@
         height: 200px;
       }
 
-      .links { 
-        button{
+      .links {
+        button {
           margin: 0 40;
           transition: transform 0.3s ease-in-out;
           background: none;
@@ -204,6 +203,26 @@
       }
       button:hover {
         transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@include bigdesktop {
+  .aboutUsInformation {
+    .section.firstSection {
+      .firstInformation {
+        h1 {
+          font-size: 80;
+        }
+        .startInformation {
+          margin: 230px 120px 0;
+        }
+      }
+    }
+    .section.secondSection{
+      .secondInformation{
+        padding: 0 250px;
       }
     }
   }

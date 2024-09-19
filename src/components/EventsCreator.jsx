@@ -6,8 +6,9 @@ import { useState } from "react";
 const EventsCreator = () => {
   const navigate = useNavigate();
   const [isExpanded, setIsExpanded] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const othersEventContainer = document.querySelector(".othersEventContainer");
-  const toggleModals = () => {
+  const toggleYourEvents = () => {
     setIsExpanded(prevIsExpanded => {
       if (!prevIsExpanded) {
    
@@ -23,7 +24,11 @@ const EventsCreator = () => {
       return !prevIsExpanded;
     });
   };
-  
+   
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  }
+
   return (
     <>
     <Modal/>
@@ -32,8 +37,8 @@ const EventsCreator = () => {
         <div className="navBar">
           <h1>Your Events</h1>
           <div className="addEventContainer">
-            <button className="addButton">Add Event</button>
-            <a onClick={toggleModals}>See more</a>
+            <button onClick={toggleModal} className="addButton">Add Event</button>
+            <a onClick={toggleYourEvents}>See more</a>
           </div>
         </div>
         <div className="eventContainer">

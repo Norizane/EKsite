@@ -9,12 +9,12 @@
       flex-direction: column;
       align-items: center;
 
-      h1{
+      h1 {
         font-weight: 400;
         color: $thirdly-color;
       }
 
-      p{
+      p {
         color: $thirdly-color;
       }
 
@@ -24,7 +24,6 @@
         border-radius: 4px;
         margin-bottom: 20px;
         box-shadow: $shadow;
-
       }
       button {
         cursor: pointer;
@@ -47,6 +46,26 @@
     .react-multiple-carousel__arrow--left {
       left: calc(2% + -1px);
       top: 290;
+    }
+  }
+}
+
+@include bigdesktop {
+  .carouselContainer {
+    .carousel {
+      margin-top: 60px;
+      .member{
+       img{
+        width: 400px;
+        height: 400px;
+       }
+      }
+      .react-multiple-carousel__arrow--right {
+        top: 340;
+      }
+      .react-multiple-carousel__arrow--left {
+        top: 340;
+      }
     }
   }
 }

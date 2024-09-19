@@ -1,7 +1,11 @@
+
+
 .eventCreationContainer {
   height: 100vh;
   font-family: $font-family-base;
   overflow: hidden;
+
+ 
   .yourEventsContainer {
     height: 35vh;
     margin: 20px 100px;
@@ -86,4 +90,22 @@
     opacity: 0;
     transition: opacity 1s ease-in;
   }
+}
+
+@include bigdesktop {
+  .eventCreationContainer{
+    .yourEventsContainer {
+      margin: 20px 300px;
+      .eventContainer {
+        margin-top: 30px;
+       }
+    }
+    .othersEventContainer {
+      margin: 20px 300px;
+     .eventContainer {
+       margin-top: 40px;
+      }
+    }
+  }
+ 
 }
