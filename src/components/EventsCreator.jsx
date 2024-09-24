@@ -31,7 +31,7 @@ const EventsCreator = () => {
 
   return (
     <>
-    <Modal/>
+    <Modal isModalOpen={isModalOpen} toggleModal={toggleModal}/>
     <div className="eventCreationContainer">
       <div className={`yourEventsContainer ${isExpanded ? "expand" : ""}`}>
         <div className="navBar">
